@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <title>Suptech Environnement</title>
+    <style>
+  
+        .footer {
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          height: 10%;
+          background-color: #8abd91;
+          text-align: center;
+          color: white;
+          font-size: medium;
+          font-weight: 200;
+          z-index: 999; /* Ensure footer is above other content */
+          display: block;
+        }
+      
+
+        
+        </style>
+</head>
+<body >
+<!--___________________________________________________topnav________________________________________________________________________________________-->
+<div class="row d-flex" >
+<a class="tablink text-center align-content-center col-lg-3 col-md-3"  href="https://www.frdisi.ma/fr"target="_blank" ><img src="pictures/FRDSI logo[1](1).png" title="FRDSI" class="img-fluid" style="max-height: 3em;" alt="FRDSI"/> </a>
+<a class="tablink text-center align-content-center col-lg-3 col-md-3 on" href="SuptechEnv.html">Suptech Environnement</a>
+<a class="tablink text-center align-content-center col-lg-3 col-md-3 "  href="SuptechSante.html" >Suptech Sante</a>
+<a class="tablink text-center align-content-center col-lg-3 col-md-3" href="#">Contatez-nous</a>
+</div>
+<!--____________________________________________________header_____________________________________________________________________-->
+
+<header class="header sticky-top">
+            <nav class="nav containerH" >
+                <div class="nav__data">
+                    <a href="Home.html" class="nav__logo">
+                        <img src="pictures/Picture1.png" class="img-fluid logo" style="max-width: 8em;" alt="logo suptech sante" />
+                    </a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="Home.html" class="nav__link">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="Campuses.html" class="nav__link">Campuses</a>
+                        </li>
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <a href="Formations.HTML" class="nav__link dropdown__button">
+                                Formations <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </a>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                      <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i><img src="assets\master.png" alt="" class="img-fluid" style="max-width: 1.25em;"></i>
+                                        </div>
+                              <span class="dropdown__title">Cycle Classes Préparatoires</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="1ère_année.html" class="dropdown__link">1ère Année</a>
+                                            </li>
+                                            <li>
+                                                <a href="2ème_année.html" class="dropdown__link">2ème Année </a>
+                                            </li>
+                                        </ul>
+                                     
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i><img src="assets\cycle-ingenieur.png" alt="" class="img-fluid" style="max-width: 1.25em;"></i>
+                                        </div>
+                              <span class="dropdown__title">Cycle Licence</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="GASTE.html" class="dropdown__link">Génie de l'Assainissement et des Systèmes de Traitement des Eaux</a>
+                                            </li>
+                                            <li>
+                                                <a href="QHSE.html" class="dropdown__link">Qualité, Hygiène, Sécurité et Environnement</a>
+                                            </li>
+                                            <li>
+                                                <a href="TER.html" class="dropdown__link">Technologies des Energies Renouvelables</a>
+                                            </li>
+                                            <li>
+                                                <a href="GILVH.html" class="dropdown__link">Gestion Intégrée du Littoral et Valorisation Halieutique</a>
+                                            </li>
+                                            <li>
+                                                <a href="MSPSM.html" class="dropdown__link">Métiers Subaquatiques et Plongée Sous-Marine</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    </div>    
+                                    
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i><img src="assets\cycle-licence.png" alt="" class="img-fluid" style="max-width: 1em;"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Cycle Master</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="GEAAH.html" class="dropdown__link">Génie de l'Eau, de l'Assainissement et des Aménagements Hydroagricoles</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i><img src="assets\classes-prepa.png" alt="" class="img-fluid" style="max-width: 1.25em;"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Cycle Ingénieur</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="CI_GEE.html" class="dropdown__link">Génie de l'Eau et de l'Environnement </a>
+                                            </li>
+                                            <li>
+                                                <a href="CI_GDSE.html" class="dropdown__link">Génie Digitale des Systèmes Energétiques</a>
+                                            </li>
+                                            </ul>     
+                                    </div>
+    
+                                    
+                            </div>
+                        </li>
+
+                        <!--=============== DROPDOWN 2 ===============-->
+                        <li class="dropdown__item">
+                            <a href="FormationContinue.html" class="nav__link dropdown__button">
+                                Formations Continue <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </a>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i><img src="assets\cycle-licence.png" alt="" class="img-fluid" style="max-width: 1em;"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Bac+3</span>
+    
+                                        <ul class="dropdown__list">
+                                          <li>
+                                            <a href="#" class="dropdown__link">Génie de l'Assainissement et des Systèmes de Traitement des Eaux</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Qualité, Hygiène, Sécurité et Environnement</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Technologies des Energies Renouvelables</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Gestion Intégrée du Littoral et Valorisation Halieutique</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Métiers Subaquatiques et Plongée Sous-Marine</a>
+                                        </li>
+                                    </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i><img src="assets\master.png" alt="" class="img-fluid" style="max-width: 1.25em;"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Bac+5</span>
+    
+                                        <ul class="dropdown__list">
+                                          <li>
+                                            <a href="#" class="dropdown__link">Génie de l'Eau, de l'Assainissement et des Aménagements Hydroagricoles</a>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+      
+
+                        <!--=============== DROPDOWN 3 ===============-->
+                        <li class="dropdown__item">                        
+                            <div class="nav__link dropdown__button">
+                                Pré-inscription <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i><img src="assets\pre-inscription.png" alt="" class="img-fluid" style="max-height: 0.9em;"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Effectuer une Pré-inscription</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="Pré-inscription.html" class="dropdown__link">Formations initiale</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Formations continue</a>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i><img src="assets\suivi.png" alt="" class="img-fluid" style="max-height: 1em;"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Suivre ma demande</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="Suivi_Pré-inscription.html" class="dropdown__link">Suivi de Pré-inscription</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--===============DOPDOWN 4 =================-->
+                        <li class="dropdown__item">                        
+                            <div class="nav__link dropdown__button">
+                                 Concours <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i><img src="assets\planning.png" alt="" class="img-fluid" style="max-width: 1em;"></i>
+                                        </div>
+    
+                                        <a href="Concours.html" class="dropdown__title ">Planning</1>
+    
+                            
+                                        
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i><img src="assets\results.png" alt="" class="img-fluid" style="max-width: 1em;"></i>
+                                        </div>
+    
+                                        <a href="Resultats.html" class="dropdown__title">Resultats</a>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Session 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Session 2</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--===============dropdown5=========================-->
+                        <li class="dropdown__item">                        
+                            <a href="Documents.html" class="nav__link dropdown__button">
+                               Documents <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </a>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i><img src="assets\docs.png" alt="" class="img-fluid" style="max-width: 0.7em;"></i>
+                                        </div>
+    
+                                        <a class="dropdown__title" href="#">Acte de cautionnement </a>
+                                        
+                                    </div>
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i><img src="assets\docs.png" alt="" class="img-fluid" style="max-width: 0.7em;"></i>
+                                        </div>
+    
+                                        <a class="dropdown__title" href="#">Règlement internat</a>
+                                        
+                                    </div>
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i><img src="assets\docs.png" alt="" class="img-fluid" style="max-width: 0.7em;"></i>
+                                        </div>
+    
+                                        <a class="dropdown__title" href="#">Reglement Cycle<br> licence et master</a>
+                                        
+                                    </div>
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i><img src="assets\docs.png" alt="" class="img-fluid" style="max-width: 0.7em;"></i>
+                                        </div>
+    
+                                        <a class="dropdown__title" href="#">reglement interieur classes<br> preparatoires et cycle d’ingenieur </a>
+                                        
+                                    </div>
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i><img src="assets\docs.png" alt="" class="img-fluid" style="max-width: 0.7em;"></i>
+                                        </div>
+    
+                                        <a class="dropdown__title" href="#">RIB </a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--======================dropdown6=============================-->
+                        <li class="dropdown__item">                        
+                            <div class="nav__link dropdown__button">
+                                Bourses et Tarifs<i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i><img src="assets\bourse.png" alt="" class="img-fluid" style="max-width: 1em;"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Bourse</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="demandeBourse1.html" class="dropdown__link">Demander une bourse</a>
+                                            </li>
+                                            <li>
+                                                <a href="SuiviBourse.html" class="dropdown__link">Suivre ma demande </a>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i><img src="assets\tarrifs.png" alt="" class="img-fluid" style="max-width: 0.9em;"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Tarifs</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Formations Continue</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Formations initial</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+<main id="res_main">
+
+   
+    <p style="font-size: 2.5em;  color: #0a87b1; text-align: center; 
+    margin-top: 3%;" ><strong>Résultats du Concours d'Accès aux Classes Préparatoires de l'Ecole SUPTECH SANTE</strong></p>
+<div class="bordered-content container ">
+    
+    <div class="row" id="res_row">
+        <div id="col1" class="col-md-6" >
+            <p style=" font-size: 1.5em; margin-top: -5%;">Session 1</p>
+            <div class="bordered-content1">
+            <a style=" color:white;  text-decoration: none; transition: color 0.3s;  " href="#">Site Mohammedia</a>
+            </div>
+            <br>
+            <div class="bordered-content1">
+                <a style=" color:white;  text-decoration: none; transition: color 0.3s; " href="#">Site Essaouira</a>
+                </div>
+        </div>
+        <div id="col2" class="col-md-6" >
+            <p style=" font-size: 1.5em; margin-top: -5%;">Session 2</p>
+            <div class="bordered-content1">
+                <a style=" color:white;  text-decoration: none; transition: color 0.3s; " href="#">Site Mohammedia</a>
+                </div>
+            <br>
+            <div class="bordered-content1">
+                <a style=" color:white;  text-decoration: none; transition: color 0.3s; " href="#">Site Essaouira</a>
+                </div>
+        </div>
+    </div>
+     
+</div>
+
+
+</main>
+
+
+
+<footer class="footer">
+  
+    <div class="container text-center" style="margin-top: 1%;">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-envelope"></i></a>
+      <a href="#"><i class="fa fa-whatsapp"></i></a>
+    
+      <p>SUPTECH ENVIRONNEMENT ©2024 Tous les droits sont réservés.</p>
+    </div>
+    
+  
+  </footer>
+  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="Js_File.js">
+  
+  
+
+
+    
+    </script>
+</body>
+</html>
