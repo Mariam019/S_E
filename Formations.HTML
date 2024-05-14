@@ -19,10 +19,9 @@
 
 <style>
 
-
-
+   
    #sec{
-   top: 16.8%;
+   top: 16%;
        
         position: absolute;
         height: 60%;
@@ -137,7 +136,7 @@
         transform: scale(1.02);
         box-shadow: 0 0 200px rgb(29, 187, 66);
     }
-     header, .section, .navbar, .row, .div, body {
+     header, #sec,  body {
     width: 100vw;
 }
 
@@ -150,9 +149,7 @@
   #sec {
    top: 27.5% !important;
   }
-  .row{
-  margin-top: 15% !important;
-  }
+ 
 }
 
     @media only screen and (max-width: 768px) {
@@ -166,21 +163,23 @@
   
   }
   .sec{
-    margin-top: 25% !important;
+    margin-top: 15% !important;
   }
-  .row{
-  margin-top: 25%;
-  }
+  
   .card {
     width: 90%;
   }
-  .subnav-content {
-    z-index: 6900;
+  body{
+    top: 0 !important;
+    margin-top: 0 !important;
+  }
+  html{
+    margin-top: 0% !important;
   }
 }
 
 
-#firstheader, header, .section, .navbar, .row, .div, body, footer {
+ header, #sec,  .row, .div, body, footer {
     width: 100%; /* Change width to 100% */
 }
 @media only screen and (max-width: 1024px) {
@@ -197,38 +196,20 @@
     margin-bottom: 20% !important;
   }
   
-  .row{
-  margin-top: 15%;
-  }
+ 
   .card {
     width: 100%;
   }}
-  .sticky {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            animation: fadeInDown 0.5s ease;
-            z-index: 999;
-        }
-
-        @keyframes fadeInDown {
-            0% {
-                opacity: 0;
-                transform: translateY(-100%);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+ 
 </style>
-<body>
+</head>
+<body >
   <!--___________________________________________________topnav________________________________________________________________________________________-->
   <div class="row d-flex" >
   <a class="tablink text-center align-content-center col-lg-3 col-md-3"  href="https://www.frdisi.ma/fr"target="_blank" ><img src="pictures/FRDSI logo[1](1).png" title="FRDSI" class="img-fluid" style="max-height: 3em;" alt="FRDSI"/> </a>
   <a class="tablink text-center align-content-center col-lg-3 col-md-3 on" href="SuptechEnv.html">Suptech Environnement</a>
   <a class="tablink text-center align-content-center col-lg-3 col-md-3 "  href="SuptechSante.html" >Suptech Sante</a>
-  <a class="tablink text-center align-content-center col-lg-3 col-md-3" href="#">Contatez-nous</a>
+  <a class="tablink text-center align-content-center col-lg-3 col-md-3" href="Contact.html">Contatez-nous</a>
   </div>
   <!--____________________________________________________header_____________________________________________________________________-->
   
@@ -574,7 +555,7 @@
           </header>
     <section class="sec" id="sec" style="margin-top: 0%;">
         <div class="row" >
-            <div class="col-md-3" style="margin-left: 2%; margin-top: 5%;">
+            <div class="col-md-3" style="margin-left: 2%; margin-top: 2%;">
                 <img class="img-fluid float-left" src="pictures/education logo.png" style="height: 45px; width:45px; margin-right: 10px;">
                 <p id="CP" style="color: #8abd91; display: inline-block; font-size: medium;"><strong>Cycle Classes Préparatoires</strong></p>
             </div>

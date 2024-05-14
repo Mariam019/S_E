@@ -88,3 +88,24 @@ window.addEventListener('scroll', function() {
     }
 });
 
+/* Formation continue TAB */
+function openTab(evt, id) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("container-Fc-tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink_fc");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove("active");
+    }
+    document.getElementById(id).style.display = "block";
+    evt.currentTarget.classList.add("active");
+  }
+
+  // Automatically open the first tab on page load
+  window.onload = function() {
+    document.getElementById('PR').style.display = "block";
+    document.querySelector('.tablink_fc.active').classList.remove('active');
+    document.querySelector('.tablink_fc').classList.add('active');
+  };
