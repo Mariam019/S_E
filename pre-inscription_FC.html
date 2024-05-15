@@ -15,25 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     
     <title>Suptech Environnement</title>
-    <style>
-  
-        .footer {
-          position: fixed;
-          bottom: 0;
-          width: 100%;
-          height: 10%;
-          background-color: #8abd91;
-          text-align: center;
-          color: white;
-          font-size: medium;
-          font-weight: 200;
-          z-index: 999; /* Ensure footer is above other content */
-          display: block;
-        }
-      
-
-        
-        </style>
+   
 </head>
 <body >
 <!--___________________________________________________topnav________________________________________________________________________________________-->
@@ -385,68 +367,82 @@
                 </div>
             </nav>
         </header>
-    <main id="iscri_main" >
-        
-        <section id="inscrif">
-          <article class="index-form">
-            
-                
-                    <form class="col-xs-12" style="z-index: 1001;" id="inscri_field">
-                        <legend id="inscri_leg" style=" border: 2px solid black; 
-                        border-radius: 25px; 
-                        padding: 25px;
-                        border-style: solid; 
-                        border-width: 1px; 
-                        color: white;
-                        background-color: #0a87b1; "><strong>Pré-inscription</strong></legend>
-                        
-                    <div class="row">
-                    <div class="container" id="inscri_con" >
-                        <div class="col-sm-4">
-                    <div class="form-group">
-                        <label id="label" for="Nom">Nom :</label>
-                        <input class="form-control" type="text" name="Nom" placeholder="Nom">
-                        
-                    </div>
-                    <div class="form-group">
-                        <label id="label" for="Code MASSAR/CIN">Code MASSAR / CIN :</label>
-                        <input class="form-control" type="text" name="Code MASSAR/CIN" placeholder="Code MASSAR/CIN">
-                    </div>
-                    <div class="form-group">
-                        <label id="label" for="Sexe">Sexe :</label><br>
-                        <input type="radio" id="F" name="sexe" value="Femme" />
-                                <label id="label1" for="F">Femme</label>&nbsp;&nbsp;
-                        <input type="radio" id="H" name="sexe" value="Homme" />
-                                <label id="label1" for="H">Home</label>
-                    </div>
-                    <div class="form-group">
-                        <label id="label" for="Date de naissance">Date de naissance :</label>
-                        <input class="form-control" type="date" name="Date de naissance" >
-                    </div>
-                    <div class="form-group">
-                        <label id="label" for="ville">Ville de formation :</label><br>
 
-                            <select  class="form-control" name="ville" id="ville">
-                            <option   value="Mohammedia">Mohammedia</option>
-                            <option  value="Essaouira">Essaouira</option>
-                            </select>
-                    </div>
-                </div>
-           
 
-           
-                <div class="col-sm-4">
-            <div class="form-group">
-                <label id="label" for="Prénom">Prénom :</label>
-                <input class="form-control" type="text" name="Prénom" placeholder="Prénom">
-                
-            </div>
-            <div class="form-group">
-                <label id="label" for="Email">Email :</label>
-                <input class="form-control" type="email" name="Email" placeholder="Code MASSAR/CIN">
-            </div>
-            <div class="form-group">
-                <label for="nat"> Nationalité :</label>
+
+
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Form%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<div class=" container legend">
+    <h2 class="display-4 form-Title2">Pré-inscription en formations continue</h2>
+  </div>
+  
+  
+  
+  <form method="post">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 col-md-6 form-group">
+                  <label for="nom">Nom :</label>
+                  <input type="text" name="nom" class="form-control" id="nom" placeholder="Nom complet" required="">
+              </div>
+  
+              <div class="col-lg-4 col-md-6 form-group">
+                  <label for="prenom">Prénom :</label>
+                  <input type="text" name="prenom" class="form-control" id="prenom" placeholder="Prénom" required="">
+              </div>
+  
+              <div class="col-lg-4 col-md-6 form-group">
+                  <label for="dip">Dernier Diplôme obtenu :</label>
+                  <select class="form-select" id="dip" name="dip" aria-label="select" required="">
+                      <option disabled="" selected="" value="">Dernier Diplôme obtenu / En cours</option>
+                      <option value="BAC en cours">BAC en cours</option>
+                      <option value="BAC">BAC</option>
+                      
+                      <option value="BAC+2">BAC+2</option>
+                      <option value="BAC+3">BAC+3</option>
+                      
+                  </select>
+              </div>
+          </div>
+  
+          <div class="row">
+              <div class="col-lg-4 col-md-6 form-group">
+                  <label for="cin_massar">Code massar (CNE):</label>
+                  <input type="text" class="form-control" name="cin_massar" id="cin_massar" placeholder="Code massar /Carte d'identité nationale (CIN):" required="">
+              </div>
+  
+              <div class="col-lg-4 col-md-6 form-group">
+                  <label for="email">Email :</label>
+                  <input type="email" name="email" class="form-control" id="email" placeholder="Email" required="">
+              </div>
+  
+              <div class="col-lg-4 col-md-6 form-group">
+                  <label for="telephone">Téléphone:</label>
+                  <input type="text" class="form-control" name="telephone" id="telephone" placeholder="Téléphone" required="">
+              </div>
+          </div>
+  
+          <div class="row">
+              <div class="col-lg-12 form-group">
+                  <div class="d-flex justify-content-center">
+                      <label id="label"> Sexe : </label>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                      <div class="custom-radio" name="sexe" id="mySelect" aria-label="select" required="">
+                          <input type="radio" id="femme" name="sexe" value="femme">
+                          <label id="label" for="femme">Femme</label>
+                          <input type="radio" id="homme" name="sexe" value="homme">
+                          <label id="label" for="homme">Homme</label>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="row">
+              <div class="col-lg-6 col-md-6 form-group">
+                  <label for="nat"> Nationalité :</label>
                   <select class="form-select form-control" name="nat" id="nat" required="">
                       <option value="" disabled="" selected="">Nationalité</option>
           
@@ -643,48 +639,29 @@
                   </select>
               </div>
   
-            
-            <div class="form-group">
-                <label id="label" for="CIN">CIN :</label>
-                <input class="form-control" type="text" name="CIN" placeholder="CIN" >
-            </div>
-            <div class="form-group">
-                <label id="label" for="bourse">Voulez-vous postuler au bourse ?</label><br>
-                <input type="radio" id="oui" name="bourse" value="Oui" />
-                        <label id="label1" for="oui">Oui</label>&nbsp;&nbsp;
-                <input type="radio" id="non" name="bourse" value="Non" />
-                        <label id="label1" for="non">Non</label>
-            </div>
-        
-        </div>
-
-        <div class="col-sm-4">
-            <div class="form-group">
-                <label id="label" for="diplome">Dernier Diplôme obtenu / En cours :</label>
-                <input class="form-control" type="text" name="diplome" placeholder="Dernier Diplôme obtenu / En cours  ">
-                
-            </div>
-            <div class="form-group">
-                <label id="label" for="phone">Téléphone :</label>
-                <input class="form-control" type="text" name="phone" placeholder="+212600000000">
-            </div>
-            <div class="form-group">
-                <label id="label" for="Adresse">Adresse :</label>
-                <input class="form-control" type="text" name="Adresse" placeholder="Adresse">
-            </div>
-            
-            <div class="form-group">
-                <label class="mb-3" id="label">Filière :</label>
+              <div class="col-lg-6 col-md-6 form-group">
+                  <label for="adresse">Adresse:</label>
+                  <input type="text" class="form-control" name="adresse" id="adresse" placeholder="Adresse" required="">
+              </div>
+  
+              <div class="col-lg-6 col-md-6 form-group">
+                  <label for="date_naissance">Date de naissance:</label>
+                  <input type="date" id="date_naissance" name="date_naissance" class="form-control">
+              </div>
+  
+              <div class="col-lg-6 col-md-6 form-group">
+                  <label for="cin">Carte d'identité nationale (CIN):</label>
+                  <input type="text" class="form-control" name="cin" id="cin" placeholder="Carte d'identité nationale (CIN):" required="">
+              </div>
+          </div>
+  
+          <div class="row">
+              
+               <div class="col-lg-6 col-md-6 form-group">
+          <label class="mb-3" id="label">Formation souhaitée</label>
         <select class="form-select" name="Sectors" aria-label="select" required="">
           <option disabled selected value="">Filières</option>
-          <optgroup label="Cycle Classes préparatoires intégrées">
-            <option value="Classes préparatoires intégrées: 1ère année">1ère Année</option>
-            <option value="Classes préparatoires intégrées: 2ème année">2ème Année</option>
-          </optgroup>
-          <optgroup label="Cycle ingénieur">
-            <option value="Cycle ingénieur: Génie Biomédical">Génie de l'eau et de l'environnement</option>
-            <option value="Cycle ingénieur: Génie digital et intelligence Artificielle en santé">Génie digital des systèmes energétiques</option>
-            
+          
           <optgroup label="Cycle licence">
             <option value="Génie de l'assainissement et des systèmes de traitement des eaux">Licence en Génie de l'assainissement et des systèmes de traitement des eaux</option>
             <option value="Licence en  Qualité, Hygiène, Sécurité et Environnement (QHSE)">Licence en  Qualité, Hygiène, Sécurité et Environnement (QHSE)</option>
@@ -699,49 +676,100 @@
             <option value="Génie de l'eau, de l'assainissement et des aménagements hydroagricoles">Génie de l'eau, de l'assainissement et des aménagements hydroagricoles</option>
           </optgroup>
         </select>
-            </div>
-            <div class="form-group">
-                <button  id="btn_inscri" type="button" class="btn btn-lg"><strong>S'inscrire</strong></button>
-            </div>
-        
-        </div>
-
-    </div>
-</div>
-</form>
-        
-           </article>
-        </section>
-
-
-    </main>
-
-    <footer class="footer">
-  
-      <div class="container text-center" style="margin-top: 1%;">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-envelope"></i></a>
-        <a href="#"><i class="fa fa-whatsapp"></i></a>
-      
-        <p>SUPTECH ENVIRONNEMENT ©2024 Tous les droits sont réservés.</p>
       </div>
-      
-    
-    </footer>
-    
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+              <div class="col-lg-6 col-md-6 form-group">
+                  <label for="dip">Ville de formation :</label>
+                  <select class="form-select" id="dip" name="dip" aria-label="select" required="">
+                      <option disabled="" selected="" value="">Ville de formation</option>
+                      <option value="Ville de formation :">Ville de formation :</option>
+                      <option value="MOHAMMEDIA">MOHAMMEDIA</option>
+                      <option value="ESSAOUIRA">ESSAOUIRA</option>
+                      
+                  </select>
+              </div>
   
-    <script src="Js_File.js">
-      
+          </div>
+  
+          <div class="row">
+              <div class="col-lg-6 col-md-6 form-group">
+                          <label> Carte D'Identité Nationale :</label>
+                          <input type="file" class="form-control" name="carte d'identité nationale" id="carte d'identité nationale" accept="application/pdf" required="">
+              </div>
+              <div class="col-lg-6 col-md-6 form-group">
+                          <label> Votre CV : </label>
+                          <input type="file" class="form-control" name="cv" id="cv" accept="application/pdf" required="">
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-6 col-md-6 form-group">
+                          <label> Dernier diplome obtenu :</label>
+                          <input type="file" class="form-control" name="Dernier diplome obtenu" id="Dernier-diplome" accept="application/pdf" required="">
+              </div>
+              <div class="col-lg-6 col-md-6 form-group">
+                          <label> Reçu frais d'étude d'inscription :</label>
+                          <input type="file" class="form-control" name="Reçu frais d'étude d'inscription" id="Reçu-frais" accept="application/pdf" required="">
+              </div>
+          </div>
+  
+          <div class="container">
+              <div class="text-center">
+                  <button type="submit" id="btn">
+                      <div class="my-class">
+                          <span class="loader" style="display: none;"></span>
+                      </div>
+                      <div  style="display: block;"> S'inscrire </div>
+                  </button>
+              </div>
+          </div>
+      </div>
+  </form>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+  
+    <div class="container text-center" style="margin-top: 1%;">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-envelope"></i></a>
+      <a href="#"><i class="fa fa-whatsapp"></i></a>
+    
+      <p>SUPTECH ENVIRONNEMENT ©2024 Tous les droits sont réservés.</p>
+    </div>
+    
+  
+  </footer>
+  
+
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="Js_File.js">
+    
+    
+  
     
 
 
-      
-      </script>
-  </body>
+
+
+    
+    </script>
+</body>
 </html>
