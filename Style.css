@@ -1203,66 +1203,117 @@ label{
   }
 }
 
-/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Campuses%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
-li{
-  display: inline-block;
-  color: #fff;
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Campuses %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+.campus{
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  
+  
+}
+.crow{
+  justify-content: center !important;
+  align-self: center;
+  column-gap: 3rem;
+}
+.heading h1 {
+  padding: 1.5rem 1rem;
+  margin: 2rem 0 0 0;
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  background: #0a87b1;
+  width: fit-content;
+}
+
+h1.simple-clip {
+  padding-right: 50px;
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+}
+
+h1.complex-clip {
+  padding-top: 20px;
+  padding-right: 50px;
+  width: 25rem;
+  clip-path: polygon(0 0%, 90% 0, 100% 100%, 0% 100%);
+}
+
+#p {
+  
+  border: 4px solid #0a87b1;
+  padding: 2rem 0.5rem 1.5rem;
+  background-color: #f3f3fd;
+  height: 70rem;
+}
+.camp li{
+  
+  color: #8abd91;
 }
 .imgC{
-  width: 100% ;
+  max-width: 225px ;
   max-height:190;
   opacity: 80%;
   z-index: -9;
   border-radius: 5px;
-  
+  max-height: 35rem;
+  width: 100%;
 }
-#captionCam{
-  margin-top: 5px;
-  background-color: #0a87b1;
-  padding-left: 10px;
+.caption{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   border-radius: 5%;
-  color: #fff;
-  font-size: 16px;
+  color:#043e52;
+  font-size: 2rem;
 }
 .links a{
   font-style: normal;
   text-decoration: none;
-  color: white;
+  color:#043e52!important;
+  font-size: 1.5rem;
 }
 .links a:hover{
-  font-size: larger;
+  font-size: large;
   font-style: normal;
   text-decoration: none;
-  color: white;
+  color: #8abd91;
 }
-@media screen and (max-width: 624px){
-	#MOHAMMEDIA{
-    margin-bottom: 10px;
-  }
-  #ESSAOUIRA{
-    margin-bottom: 10px;
-  }
-  #mainCampus{
-    margin-bottom: 10% !important;
-  }
-}
-@media only screen and (min-width: 1725px){
-	#MOHAMMEDIA{
-    width: 690px;
-  }
-  #ESSAOUIRA{
-    width: 690px;
-  }
-}
+.C-heading{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  
+  
+  color: #0a87b1;
+  
+  padding-top: 1%;
+  padding-bottom: 30px !important;
+ 
+  border-bottom: solid 1px  #0a87b1;
+  width: 20rem;
+  
+  
+  font-weight: 500 ;
+  
 
-#mainCampus{
-  margin-bottom: 6%;
 }
-/* CI_GDSE STYLING */
-@media only screen and (max-width: 525px) {
-  #mainCI_GDSE{
-      margin-bottom: 25%;
-  }
+.cmp p{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 5%;
+  color:black;
+  font-size: 2rem;
+}
+.cmp img{
+  padding-top: 4rem;
+  width: 100%;
+  height: 90%;
+}
+.facilities{
+  
+  margin-bottom: 10rem;
 }
 /* ################################### CI_GEE STYLING ##################################### */
 @media only screen and (max-width: 525px) {
@@ -1965,13 +2016,13 @@ color: #043e52;
   padding: 1% 4% 1% 4%;
   margin-top: 5%;
   color:black;
-  font-size: 1.5rem;
+  font-size: 2rem;
  
 }
 #text_fc2{
   padding: 1% 4% 1% 4%;
   margin-top: -1.5% !important;
   color: black;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 10%;
 }
