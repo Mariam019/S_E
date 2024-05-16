@@ -1086,7 +1086,14 @@ a {
 }
 }
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    Forms     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
-
+.legend {
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  height: 30px;
+  margin-top: 10rem;
+  margin-bottom: 8rem;
+}
 .form-Title2 {
   padding-top: 1%;
   padding-bottom: 30px !important;
@@ -1097,8 +1104,30 @@ a {
   font-size: 25px !important;
   font-weight: 500 !important;
   text-align: center !important;
-  justify-content: center;
+  justify-content: center !important;
 }
+.legend3 {
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  height: 30px;
+  margin-top: 2rem !important;
+  margin-bottom: 8rem;
+}
+.form-Title3 {
+  padding-top: 1%;
+  padding-bottom: 30px !important;
+  color: #0a87b1;
+  border-bottom: solid 1px  #0a87b1;
+  width: 30rem;
+  height: 8rem;
+  font-size: 25px !important;
+  font-weight: 500 !important;
+  text-align: center !important;
+  justify-content: center !important;
+  
+}
+
 
 form{
   margin: 3% 3% 1% 3%;
@@ -1639,7 +1668,7 @@ font-size: medium;
 
 #iscri_main {
 padding: 5%;
-padding-bottom: 20%;
+padding-bottom: 35% !important;
 margin-bottom: 8%;
 }
 #inscri_con {
@@ -1679,7 +1708,7 @@ margin-top: -9%;
       margin-bottom: 25%;
   }
 }
-/* Résultats concours styling */
+/*####################### Résultats concours styling ############################*/
 
 
 @media only screen and (max-width: 525px) {
@@ -1692,7 +1721,7 @@ margin-top: -9%;
   }
   .bordered-content1{
     width: 100% !important;
-    margin-left: -4.5% !important;
+    margin-left: 0 !important;
     font-size: 1.1em !important;
   }
   #col1{
@@ -1720,13 +1749,13 @@ margin-top: -9%;
  margin-bottom: 10%;
 }
 .bordered-content1{
-    border: 1px solid white;  
+    border: 1px solid #0a87b1;  
     padding-bottom: 1.5%;
     padding-top: 6%;
   margin-left: 25%;
   margin-right: 15%;
-  background-color:#8abd91;
-  color:white !important;
+  background-color: #efefef;
+ 
   border-radius: 5px;
   font-size: 1.2em;
  width: 50%;
@@ -1734,13 +1763,13 @@ margin-top: -9%;
   box-shadow:  0px  0px 30px rgba(127, 137, 161, 0.25);
 }
 #res_row a:hover {
-  color:#0a87b1 !important; 
+  color:#8abd91!important; 
 }
 
 #res_main{
   margin-bottom: 5%;
 }
-/* suivi pre-inscription styling */
+/* ####################suivi pre-inscription styling#################################### */
   
 #SPI_main {
   padding: 6%;
@@ -1969,12 +1998,12 @@ SPI_leg{
 	font-size: 1.75rem !important;
 }
 .indicator li:hover {
-	background: #efefef;
+	background:  #c7e8f3;
 }
 .indicator li.ActIve {
-	border-right-color: #8abd91;
+	border-right-color: #0a87b1;
 	color: #043e52;
-	background: #efefef ;
+	background: #c7e8f3;
 }
 .content {
 	padding: 1.5rem 2rem;
@@ -2086,7 +2115,28 @@ SPI_leg{
 }
 
 }
-/* GASTE_FC style */
-#third_rowModules{
-  margin-top: 10%;
+/* ############ bourse text ########*/
+.shiny-text {
+  padding: 1.5% 1.5% 1.5% 1.5% ;
+  text-align: center !important;
+    margin-top:6%;
+    font-size: 36px;
+    color: #fff ;
+    position: relative;
+   
+    border-radius: 30px;
+    animation: shine 2s infinite linear;
+}
+
+@keyframes shine {
+    0% {
+        box-shadow: 0 0 5px rgb(207, 78, 78) ;
+    }
+    50% {
+        box-shadow: 0 0 20px rgb(207, 78, 78), 0 0 22px rgb(141, 0, 0) ;
+    }
+    100% {
+      box-shadow: 0 0 5px rgb(207, 78, 78) ;
+  }
+   
 }
