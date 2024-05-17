@@ -1078,7 +1078,18 @@ a {
   margin-left: 3%;
   margin-right: 3%;
 }
-
+@media screen and (max-width: 768px) {
+  .president-word{
+    padding-bottom: 5% !important;
+    margin-bottom: 10% !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .president-word{
+    padding-bottom: 8% !important;
+    margin-bottom: 16% !important;
+  }
+}
 @media screen and (min-width: 1500px) {
   .card-tex {font-size: 18px}
   .Pw{
