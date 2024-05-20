@@ -21,13 +21,13 @@
 
     
    
-   #sec{
-   top: 16%;
-       
-        position: absolute;
-        height: 60%;
-        width: 100%;
-    }
+#sec {
+    flex: 1;
+    width: 100%;
+    margin-top: 2% !important;
+    padding-bottom: 2%;
+    margin-bottom: 5%;
+}
     .cards{
         display:flex;
         flex-direction: row;
@@ -42,7 +42,7 @@
         flex-direction: row;
         gap:30px;
         margin-left: 10%;
-        margin-top: 1.5%;
+        margin-top: 1%;
         
     }
     .cards2{
@@ -58,7 +58,7 @@
         flex-direction: row;
         gap:30px;
         margin-left: 10%;
-        margin-top: 1.5%;
+        margin-top: 1%;
       
     }
     .cards4{
@@ -66,7 +66,7 @@
         flex-direction: row;
         gap:30px;
         margin-left: 10%;
-        margin-top: 1.5%;
+        margin-top: 1%;
     }
     .card{
         z-index:2;
@@ -211,7 +211,25 @@
     width: 100%;
   }}
  
- 
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  
+}
+
+
+
+
 </style>
 </head>
 <body>
@@ -485,7 +503,7 @@
                                                 <i><img src="pictures\docs.png" alt="" class="img-fluid" style="max-width: 0.7em;"></i>
                                             </div>
         
-                                            <a class="dropdown__title" href="#">Règlement internat</a>
+                                            <a class="dropdown__title" href="assets/Règlement_Inernat.pdf">Règlement internat</a>
                                             
                                         </div>
                                         <div class="dropdown__group">

@@ -104,7 +104,7 @@ a {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .containerH {
-  max-width: 1120px;
+
   margin-inline: 1.5rem;
   
 }
@@ -920,7 +920,7 @@ a {
   margin: 0 3% 0 3%;
 }
 .imgT h5{
-  font-size: 17px;
+  font-size: 16px;
 }
 .cycles p {
   font-size: 20px;
@@ -949,7 +949,7 @@ a {
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1;
-  width: 95%;
+  width: 95% ;
   padding-left: 3%;
 }
 .custom-underline::after {
@@ -967,6 +967,7 @@ a {
   padding-bottom: 5%;
 }
 }
+
 /*_________________________________activites parascolaires_____________________________________________________________*/
 .MySlides {display: none}
 
