@@ -1460,7 +1460,7 @@ margin-top: -4.5%;
   align-items: center;
   justify-content: center ;
   height: 30px;
-  margin-top: 0.2rem !important;
+  margin-top: 0.4rem !important;
   margin-bottom: 3rem;
 }
 .form-Title6 {
@@ -1511,8 +1511,8 @@ margin-top: 3%;
 #contact_field{
   margin-bottom: 35%;
 }
-legend{
-  margin-top: -8%;
+.legend6 {
+  margin-top: 4.5% !important;
 }
 }
 
