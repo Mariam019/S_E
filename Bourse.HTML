@@ -279,7 +279,7 @@
                                                 <i><img src="pictures\docs.png" alt="" class="img-fluid" style="max-width: 0.7em;"></i>
                                             </div>
         
-                                            <a class="dropdown__title" href="#">Acte de cautionnement </a>
+                                            <a class="dropdown__title" href="assets/Acte_de_cautionnement.pdf">Acte de cautionnement </a>
                                             
                                         </div>
                                         <div class="dropdown__group">
@@ -295,7 +295,7 @@
                                                 <i><img src="pictures\docs.png" alt="" class="img-fluid" style="max-width: 0.7em;"></i>
                                             </div>
         
-                                            <a class="dropdown__title" href="#">Règlement Cycle<br> licence et master</a>
+                                            <a class="dropdown__title" href="assets/REGLEMENT_INTERIEUR_CYCLE_LICENCE_MASTER VF.pdf">Règlement Cycle<br> licence et master</a>
                                             
                                         </div>
                                         <div class="dropdown__group">
@@ -303,7 +303,7 @@
                                                 <i><img src="pictures\docs.png" alt="" class="img-fluid" style="max-width: 0.7em;"></i>
                                             </div>
         
-                                            <a class="dropdown__title" href="#">Règlement intérieur classes<br> préparatoires et cycle d’ingénieur </a>
+                                            <a class="dropdown__title" href="assets/REGLEMENT_ETUDES_INTERIEUR_CYCLE_INGENIEUR.pdf">Règlement intérieur classes<br> préparatoires et cycle d’ingénieur </a>
                                             
                                         </div>
                                         <div class="dropdown__group">
@@ -311,7 +311,7 @@
                                                 <i><img src="pictures\docs.png" alt="" class="img-fluid" style="max-width: 0.7em;"></i>
                                             </div>
         
-                                            <a class="dropdown__title" href="#">RIB </a>
+                                            <a class="dropdown__title" href="assets/Suptech_sante_RIB.pdf">RIB </a>
                                             
                                         </div>
                                     </div>
@@ -390,42 +390,45 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 form-group">
-                    <label for="cin">Carte d'identité nationale (CIN) :</label>
+                    <label for="cin">Carte d'identité nationale (CIN):</label>
                     <input type="text" class="form-control" name="cin" id="cin" placeholder="Numéro de CIN" required="">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 form-group">
-                    <label for="date_naissance">Date de naissance :</label>
+                    <label for="date_naissance">Date de naissance:</label>
                     <input type="date" id="date_naissance" name="date_naissance" class="form-control">
                 </div>
 
                 <div class="col-lg-4 col-md-6 form-group">
-                    <label for="telephone">Téléphone :</label>
+                    <label for="telephone">Téléphone:</label>
                     <input type="text" class="form-control" name="telephone" id="telephone" placeholder="Téléphone" required="">
                 </div>
 
                 <div class="col-lg-4 col-md-6 form-group">
-                    <label for="adresse">Adresse :</label>
+                    <label for="adresse">Adresse:</label>
                     <input type="text" class="form-control" name="adresse" id="adresse" placeholder="Adresse" required="">
                 </div>
             </div>
             <input type="hidden" class="form-control" name="tsrc" id="tsrc" placeholder="tsrc" pattern="\d+" value="">
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 form-group">
-                    <label for="cin_massar">Code massar (CNE) :</label>
+        
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-6 form-group ">
+                    <label for="cin_massar">Code massar (CNE):</label>
                     <input type="text" class="form-control" name="cin_massar" id="cin_massar" placeholder="Code massar (CNE)" required="">
                 </div>
-                <div class="row">
+                
+            </div>
+            <div class="container">
+            <div class="row">
                 <div class="col-lg-6 col-md-6 form-group">
-                    <label for="nom_pere_complet">Nom complet père :</label>
+                    <label for="nom_pere_complet">Nom complet père:</label>
                     <input type="text" class="form-control" name="nom_pere_complet" id="nom_pere_complet" placeholder="Nom complet père" required="">
                 </div>
 
                 <div class="col-lg-6 col-md-6 form-group">
-                    <label for="profession">Etat :</label>
+                    <label for="profession">Etat:</label>
                     <select class="form-select" name="profession" id="profession" aria-label="select" required="">
                         <option disabled selected value="">Etat</option>
                         <option value="Père décédé">Père décédé </option>                        
@@ -433,15 +436,14 @@
                     </select>
                 </div>
                 </div>
-            </div>
             <div class="row">
                 <div class="col-lg-6 form-group">
-                    <label for="ncm">Nom Complet mère :</label>
+                    <label for="ncm">Nom Complet mère:</label>
                     <input type="text" class="form-control" name="ncm" id="ncm" placeholder="Nom Complet mère" required="">
                 </div>
 
                 <div class="col-lg-6 col-md-6 form-group">
-                    <label for="profession">Etat :</label>
+                    <label for="profession">Etat:</label>
                     <select class="form-select" name="profession" id="profession" aria-label="select" required="">
                         <option disabled selected value="">Etat</option>
                         <option value="Mère décédé">Mère décédé </option>                        
@@ -455,12 +457,12 @@
   
         <div class="row">
                 <div class="col-lg-6 form-group">
-                    <label for="ncm">Nom Complet Tuteur :</label>
+                    <label for="ncm">Nom Complet Tuteur:</label>
                     <input type="text" class="form-control" name="ncm" id="ncm" placeholder="Nom Complet mère" required="">
                 </div>
 
                 <div class="col-lg-6 col-md-6 form-group">
-                    <label for="profession">Etat :</label>
+                    <label for="profession">Etat:</label>
                     <select class="form-select" name="profession" id="profession" aria-label="select" required="">
                         <option disabled selected value="">Etat</option>
                         <option value="Aucun Tuteur ">Aucun Tuteur </option>                        
@@ -481,28 +483,30 @@
 
 
 </div>
-  <!--
-                          <div class="alert alert-success alert-dismissible fade show  m-auto mt-5" style="width:50%; display:none;" id="succes1" role="alert">
-                              <strong>
-                                   Succès: </strong> Votre Pré-inscription est effectuée avec succès!
-  
-                          </div>
-  
-                          <div class="alert alert-danger alert-dismissible fade show  m-auto mt-5" style="width:50% ; display:none;" id="danger" role="alert">
-                              <strong>Erreur: </strong>
-                               Une erreur s'est produite! essayez plus tard
-  
-                          </div>
-                      </form>
-             </article>
-  
-          </section>
-  
-  -->
-  </div>
-  
-  
-      </form>
+
+<!--
+                        <div class="alert alert-success alert-dismissible fade show  m-auto mt-5" style="width:50%; display:none;" id="succes1" role="alert">
+                            <strong>
+                                 Succès: </strong> Votre Pré-inscription est effectuée avec succès!
+
+                        </div>
+
+                        <div class="alert alert-danger alert-dismissible fade show  m-auto mt-5" style="width:50% ; display:none;" id="danger" role="alert">
+                            <strong>Erreur: </strong>
+                             Une erreur s'est produite! essayez plus tard
+
+                        </div>
+                    </form>
+           </article>
+
+        </section>
+
+-->
+</div>
+
+
+    </form>
+
 </div>
 <footer class="footer">
     <div class="container text-center" style="margin-top: 1%;">
