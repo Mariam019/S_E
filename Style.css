@@ -1374,29 +1374,15 @@ h1.complex-clip {
   
   margin-bottom: 10rem;
 }
-/* ################################### CI_GEE STYLING ##################################### */
-@media only screen and (max-width: 525px) {
-  #mainCI_GEE{
-      margin-bottom: 25%;
-  }
-}
+
 /* ####################################### Planning Concours Styling ########################### */ 
-#mainConcoursP{
-  padding-bottom: 40px;
-}
+
 table{
   margin-top: 5%;
 
 }
 
-@media only screen and (max-width: 768px) {
- 
-  #mainConcoursP{
-      margin-bottom: 25%;
-  }
 
-
-}
 #Concours_SEC{
   
   background-color:#8abd91;
@@ -1509,10 +1495,7 @@ margin-top: 3%;
  
 }
 /* ############################ demande de bourse 1ère interface styling ########################""*/
-#DB1_main {
-  padding: 6%;
 
-  }
  #DB1_Field {
   margin: 3% 3% 4% 3%;
     border: 1px solid #0a87b1; 
@@ -1555,9 +1538,7 @@ margin-top: 3%;
   #DB1_Field{
     margin-bottom: 20%;
   }
-  #DB1_leg{
-    margin-top: -8%;
-  }
+  
   }
   /* ######################## Documents styling ######################## */
   
@@ -1604,41 +1585,8 @@ margin-top: 3%;
   background-color: #ffffff; /* Change this to the desired shine color */
   box-shadow: 0px 0px 40px #0a87b1 /* Add a glow effect */
 }
-/* #############################"" GASTE STYLING ##########################  */
 
-@media only screen and (max-width: 525px) {
-  #GASTE_main{
-      margin-bottom: 25%;
-  }
-}
-
-
-/* GEAAH STYLING */
-@media only screen and (max-width: 525px) {
-  #GEAAH_main{
-      margin-bottom: 25%;
-  }
-}
-/* GILVH STYLING */
-@media only screen and (max-width: 525px) {
-  #GILVH_main{
-      margin-bottom: 25%;
-  }
-}
-/* MSPMS_O2 STYLING */
-@media only screen and (max-width: 525px) {
-  #MSPMS_O2_main{
-      margin-bottom: 25%;
-  }
-}
-/* MSPMS_O1 STYLING */
-@media only screen and (max-width: 525px) {
-  #MSPSM_O1_main{
-      margin-bottom: 25%;
-  }
-}
-
-/* pre-inscription STYLING */
+/* ################################ pre-inscription STYLING ####################################*/
 #label{
   font-weight:200;
   color: #0a87b1;
@@ -1689,9 +1637,7 @@ border:#0a87b1;
   #inscri_field{
   margin-bottom: 35%;
 }
-#inscri_leg{
-margin-top: -9%;
-}
+
 #inscrif{
   margin-top: 10%;
 }
@@ -1700,12 +1646,7 @@ margin-top: -9%;
   width: 150px;
 }
 }
-/* QHSE STYLING */
-@media only screen and (max-width: 525px) {
-  #QHSE_main{
-      margin-bottom: 25%;
-  }
-}
+
 /*####################### Résultats concours styling ############################*/
 
 
@@ -1764,13 +1705,10 @@ margin-top: -9%;
   color:#8abd91!important; 
 }
 
-#res_main{
-  margin-bottom: 5%;
-}
+
 /* ####################suivi pre-inscription styling#################################### */
   
-#SPI_main {
-  padding: 6%;}
+
   
   .legend4 {
     display: flex;
@@ -1835,20 +1773,9 @@ margin-top: -9%;
 #SPI_field{
   margin-bottom: 20%;
 }
-SPI_leg{
-  margin-top: -8%;
- width: 100%;
- font-size: 1.1rem;
- margin-left: 0;
- margin-right: 0;
+
 }
-}
-/* TER STYLING */
-@media only screen and (max-width: 525px) {
-  #TER_main{
-       margin-bottom: 25%;
-   }
-}
+
 /* #################################FORMATION CONTINUE #######################################*/
 .hero-imagefc{
   
