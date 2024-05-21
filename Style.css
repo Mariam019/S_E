@@ -403,20 +403,16 @@ a {
 
 /* ######################################################## FOOTER ############################################### */
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100% !important;
-  height: 10%;
-  background-color: #8abd91;
+.footer  {
+  background-color:#8abd91;
+  padding: 20px;
   text-align: center;
   color: white;
   font-size: medium;
-  font-weight: 200;
-  z-index:999; 
-  display: none;
- 
+  bottom: 0 !important;
+  
 }
+
 
 .footer p {
   margin: 0; 
@@ -432,13 +428,7 @@ a {
 }
 
 
-@media screen and (max-width: 768px) {
-  .footer {
-    position:fixed; 
-    bottom: 0;
-  
-  }
-  }
+
 /*       ##################################### HOME PAGE STYLING ##################################*/
 .sign{
 	float: right;
@@ -1123,8 +1113,8 @@ a {
   align-items: center;
   justify-content: center ;
   height: 30px;
-  margin-top: 2rem !important;
-  margin-bottom: 8rem;
+  margin-top: 4rem !important;
+  margin-bottom: 10rem;
 }
 .form-Title3 {
   padding-top: 1%;
@@ -1193,12 +1183,7 @@ margin-top: 3%;
 }
 
 @media screen and (max-width: 768px) {
-  .footer {
-    position:fixed; 
-    bottom: 0;
-  
-
-  }
+ 
   form{
     margin-bottom: 20%;
   }
@@ -1449,10 +1434,12 @@ margin-bottom: 40%;
   border: 2px solid #0a87b1; 
   border-radius: 15px;
 margin: 0;
-padding: 10px;
+
+
 background-color: #E5E4E2;
 box-shadow:  0px  0px 30px rgba(127, 137, 161, 0.25);
-
+margin-left: 1%;
+width: 98%;
 z-index: -50;
 margin-top: -4.5%;
 }
@@ -1461,11 +1448,11 @@ margin-top: -4.5%;
   align-items: center;
   justify-content: center ;
   height: 30px;
-  margin-top: 0.4rem !important;
+  margin-top: 2rem !important;
   margin-bottom: 3rem;
 }
 .form-Title6 {
-  padding-top: 1%;
+  padding-top: 2%;
   padding-bottom: 30px !important;
   color: #0a87b1;
   border-bottom: solid 1px  #0a87b1;
@@ -1478,9 +1465,7 @@ margin-top: -4.5%;
   
 }
 
-#contact_main {
-padding: 2%;
-}
+
 #contact_container {
 
 margin: 0 auto;
@@ -1504,11 +1489,7 @@ margin-top: 3%;
  margin-bottom: 1.5%;
 }
 @media screen and (max-width: 768px) {
-  .footer {
-    position:fixed; 
-    bottom: 0;
-  
-}
+
 #contact_field{
   margin-bottom: 35%;
 }
@@ -1516,7 +1497,17 @@ margin-top: 3%;
   margin-top: 4.5% !important;
 }
 }
+/* ################################# wrapper and content styling of all file except home and formations ##################*/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
+.content {
+  flex: 1;
+ 
+}
 /* ############################ demande de bourse 1ère interface styling ########################""*/
 #DB1_main {
   padding: 6%;
@@ -1560,11 +1551,7 @@ margin-top: 3%;
     
   }
   @media screen and (max-width: 768px) {
-    .footer {
-      position:fixed; 
-      bottom: 0;
-    
-  }
+ 
   #DB1_Field{
     margin-bottom: 20%;
   }
@@ -1575,11 +1562,7 @@ margin-top: 3%;
   /* ######################## Documents styling ######################## */
   
 @media screen and (max-width: 768px) {
-  .footer {
-    position:fixed; 
-    bottom: 0;
   
-  }
   #Doc_card{
    
     width: 100% !important;
@@ -1596,10 +1579,7 @@ margin-top: 3%;
  
 }
 }
-  #Doc_main {
-padding: 2%;
-margin-bottom: 2%;
-}
+
  #Doc_card, #ribCard{
   box-shadow:  0px  0px 30px rgba(127, 137, 161, 0.25);
   
@@ -1613,12 +1593,7 @@ margin-bottom: 2%;
 #Doc_main a:hover{
     color: #69b573 !important;
 }
-@media screen and (min-width: 900px) {
-  .footer {
-    position:fixed; 
-    bottom: 0;
-  
-  }}
+
  #Doc_card:hover {
   transition: background-color 0.3s ease-in-out;
   background-color: #ffffff; /* Change this to the desired shine color */
@@ -1676,27 +1651,16 @@ margin-bottom: 2%;
 #inscri_field {
   border: 2px solid #0a87b1; 
   border-radius: 15px;
-margin: 0;
-
+margin: auto;
+margin-left: 1%;
+width: 98%;
 background-color: #E5E4E2;
 box-shadow:  0px  0px 30px rgba(127, 137, 161, 0.25);
 z-index: -50;
 margin-top: -1.2%;
 }
 
-#inscri_leg {
-margin-top: -2.8%;
-margin-bottom: 0;
-font-size: 1.5em;
-line-height: 0;
-color: inherit;
-text-decoration: none;
-display: inline;
-width: auto;
-border-style: solid; 
-border-width: 1px; 
-margin-left: 5%;
-}
+
 #btn_inscri {
 background-color: #0a87b1;
 color:white;
@@ -1707,15 +1671,12 @@ margin-top: 3%;
 font-size: medium;
 }
 
-#iscri_main {
-padding: 5%;
-padding-bottom: 35% !important;
-margin-bottom: 8%;
-}
+
 #inscri_con {
 
-margin: 0 auto;
+margin:  auto;
 margin-top: 3%;
+
 
 }
 #inscrif{
@@ -1724,11 +1685,7 @@ border:#0a87b1;
 }
 
 @media screen and (max-width: 768px) {
-  .footer {
-    position:fixed; 
-    bottom: 0;
-  
-  }
+ 
   #inscri_field{
   margin-bottom: 35%;
 }
@@ -1820,8 +1777,8 @@ margin-top: -9%;
     align-items: center;
     justify-content: center ;
     height: 30px;
-    margin-top: 0.1rem !important;
-    margin-bottom: 9rem;
+    margin-top: 4rem !important;
+    margin-bottom: 14rem;
   }
   .form-Title4 {
     padding-top: 0.5%;
@@ -1874,11 +1831,7 @@ margin-top: -9%;
   }
   
 @media screen and (max-width: 768px) {
-  .footer {
-    position:fixed; 
-    bottom: 0;
-  
-}
+
 #SPI_field{
   margin-bottom: 20%;
 }
@@ -2025,7 +1978,7 @@ SPI_leg{
   margin-right: auto;
 
  }
-.wrapper {
+#wrapper-formation {
 	display: flex;
 }
 .indicator {
@@ -2053,29 +2006,29 @@ SPI_leg{
 	color: #043e52;
 	background: #c7e8f3;
 }
-.content {
+#content-formation {
 	padding: 1.5rem 2rem;
 }
-.content li {
+#content-formation li {
 	display: none;
 }
-.content li.ActIve {
+#content-formation li.ActIve {
 	display: block;
 }
-.content li h1 {
+#content-formation li h1 {
 	font-size: 2rem;
 	font-weight: 600;
 	color: #043e52;
 	margin-bottom: 1.75rem;
 }
-.content li p {
+#content-formation li p {
 	margin-bottom: .5rem;
 	color:#043e52;
 	font-size: 1.5rem;
 }
-
+/*###############" small screens ########################"*/
 @media screen and (max-width: 768px) {
-	.wrapper {
+	#wrapper-formation {
 		flex-direction: column;
 	}
 	.indicator {
@@ -2085,6 +2038,7 @@ SPI_leg{
     margin-bottom: 28%;
   }
 }
+/* text formation styling */
 #text_fc1{
   padding: 1% 4% 1% 4%;
   margin-top: 5%;
@@ -2162,6 +2116,11 @@ SPI_leg{
   width:100px ;
 }
 
+}
+@media screen and (max-width: 1024px) {
+ .containerB{
+  width: 95%;
+  }
 }
 /* ############ bourse text ########*/
 .shiny-text {

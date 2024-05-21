@@ -148,22 +148,6 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " Active";
 }
-/*** FOOTER FUNCTION */
 
-window.addEventListener('scroll', function() {
-           
-            var footer = document.querySelector('.footer');
-            var scrollPos = window.scrollY || window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop;
-            var windowHeight = window.innerHeight;
-            var documentHeight = document.documentElement.scrollHeight;
-
-            // If the user has scrolled to the bottom of the page
-            if (scrollPos + windowHeight >= documentHeight) {
-              footer.style.display = 'block' ;
-            } else {
-                footer.style.display = 'none';
-            }
-        });
-    
   
     

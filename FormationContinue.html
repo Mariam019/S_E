@@ -19,9 +19,9 @@
 
    
         #sec{
-        top: 16%;
+     
             
-             position: absolute;
+             
              height: 60%;
              width: 100%;
          }
@@ -141,15 +141,14 @@
      
      @media only screen and (max-width: 425px) {
       
-        footer {
-         position:fixed; 
-         bottom: 0;
        
-       }
+       
        #sec {
         top: 27.5% !important;
        }
-      
+       .hoverarea{
+    width: 280px !important;
+  }
      }
      
          @media only screen and (max-width: 768px) {
@@ -157,13 +156,9 @@
          flex-direction: column;
        }
        
-       footer {
-         position:fixed; 
-         bottom: 0;
-       
-       }
+     
        .sec{
-         margin-top: 15% !important;
+         margin-top: 8% !important;
        }
        
        .card {
@@ -185,12 +180,9 @@
      @media only screen and (max-width: 1024px) {
        .cards, .cards1, .cards2, .cards3, .cards4 {
          flex-direction: column;
+         margin-top: 2% !important;
        }
-       footer {
-         position:fixed; 
-         bottom: 0;
-       
-       }
+      
        .sec{
          top: 15% !important;
          margin-bottom: 20% !important;
@@ -199,8 +191,9 @@
       
        .card {
          width: 100%;
-       }}
-      
+       }
+   }
+     
      </style>
 </head>
 <body >
@@ -553,7 +546,8 @@
                     </div>
                 </nav>
             </header>
-
+<div class="wrapper">
+    <main class="content">
   
         <section class="sec" id="sec" >
         
@@ -652,14 +646,14 @@
         </section>
    
 
-
+    </main>
 
 
 
 
 <footer class="footer">
   
-    <div class="container text-center" style="margin-top: 1%;">
+    <div >
       <a href="#"><i class="fa fa-facebook"></i></a>
       <a href="#"><i class="fa fa-instagram"></i></a>
       <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -672,7 +666,7 @@
   
   </footer>
   
-
+</div>
  
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>

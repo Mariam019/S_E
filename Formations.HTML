@@ -19,14 +19,29 @@
 
 <style>
 
+ 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
     
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  
+}
+
+   
    
 #sec {
     flex: 1;
     width: 100%;
     margin-top: 2% !important;
     padding-bottom: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
     .cards{
         display:flex;
@@ -147,7 +162,12 @@
  .card {
    
     width: 85% !important;
-  }}
+  }
+  .hoverarea{
+    width: 280px !important;
+  }
+
+}
 
 @media only screen and (max-width: 425px) {
   
@@ -166,11 +186,7 @@
     flex-direction: column;
   }
   
-  footer {
-    position:fixed; 
-    bottom: 0;
-  
-  }
+
   .sec{
     margin-top: 15% !important;
   }
@@ -186,6 +202,10 @@
   html{
     margin-top: 0% !important;
   }
+  #CP, #CL, #CM, #CI{
+    font-size: small !important;
+    margin-right: 0 !important;
+  }
 }
 
 
@@ -195,37 +215,25 @@
 @media only screen and (max-width: 1024px) {
   .cards, .cards1, .cards2, .cards3, .cards4 {
     flex-direction: column;
-  }
-  footer {
-    position:fixed; 
-    bottom: 0;
-  
-  }
-  .sec{
-    top: 15% !important;
-    margin-bottom: 20% !important;
+    margin-top: 1% !important;
   }
  
+  .sec{
+    top: 1% !important;
+   padding-bottom: 2% !important;
+   margin-bottom: 8% !important;
+  }
+ .img-tree--right, .img-tree--left{
+    height: 400px !important;
+ }
+ .hoverarea{
+    height: 310px !important;
+ }
  
   .card {
     width: 100%;
   }}
  
-
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-header {
-    
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  
-}
 
 
 
@@ -234,7 +242,7 @@ header {
 </head>
 <body>
   <!--___________________________________________________topnav________________________________________________________________________________________-->
-  <div class="row d-flex" >
+  <div  class="row d-flex"  >
     <a class="tablink text-center align-content-center col-lg-3 col-md-3"  href="https://www.frdisi.ma/fr"target="_blank" ><img src="pictures/FRDSI logo[1](1).png" title="FRDSI" class="img-fluid" style="max-height: 3em;" alt="FRDSI"/> </a>
     <a class="tablink text-center align-content-center col-lg-3 col-md-3 on" href="Home.html">Suptech Environnement</a>
     <a class="tablink text-center align-content-center col-lg-3 col-md-3 "  href="SuptechSante.html" >Suptech Sante</a>
@@ -583,7 +591,7 @@ header {
                     </div>
                 </nav>
             </header>
-    <section class="sec" id="sec" style="margin-top: 0%;">
+    <section class="sec" id="sec" >
         <div class="row" >
             <div class="col-md-3" style="margin-left: 2%; margin-top: 2%;">
                 <img class="img-fluid float-left" src="pictures/education logo.png" style="height: 45px; width:45px; margin-right: 10px;">
@@ -759,7 +767,7 @@ header {
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
-    <script src="Js_File.js">
+    <script src="Js_File.js" >
   
 
 
