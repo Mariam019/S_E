@@ -939,8 +939,12 @@ a {
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1;
-  width: 95% ;
-  padding-left: 3%;
+  width: 95% !important;
+ 
+}
+.nc {
+  height: 100% !important;
+  width: 100% !important;
 }
 .custom-underline::after {
     content: "";
