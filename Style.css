@@ -974,7 +974,7 @@ a {
 #para {
   max-width: 1000px;
   position: relative;
-  margin-top: -1%;
+  margin-top: 2% !important;
 }
 
 /* Next & previous buttons */
@@ -1060,7 +1060,8 @@ a {
   background-color: #8abd91;
   padding-bottom: 2%;
   width: 100%;
-  margin-bottom: 8%;
+  margin-bottom: 4%;
+  margin-top: 2%;
 }
 .Pw h2{
     color: white;
